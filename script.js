@@ -95,10 +95,11 @@ onload = () => {
           const livroAutor = document.createElement('span')
   
           // Definindo os valores dos elementos criados com base
-          livroIdSpan.textContent = `ID: ${cursor.value.id}`
-          livroTitulo.textContent = `Título: ${cursor.value.titulo}`
-          livroAutor.textContent = `Autor: ${cursor.value.autor}`
+          livroIdSpan.textContent = cursor.value.id
+          livroTitulo.textContent = cursor.value.titulo
+          livroAutor.textContent = cursor.value.autor
   
+          
           // Adicionando os elementos à lista
           listItem.appendChild(livroIdSpan)
           listItem.appendChild(document.createTextNode(' - ')) // Adicionando um separador
